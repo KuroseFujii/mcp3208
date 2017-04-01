@@ -112,12 +112,13 @@ wiringpi.pwmSetClock(375) # 50 Hz。ここには 18750/(周波数) の計算値�
 wiringpi.pwmWrite(pwm_out_pin, 69) 
 
 adc_pin0 = 0
-minduty =20
+minduty =40
 maxduty=120
-step =20
+step =20  #step間隔を変化させれば撮影する間隔を変えられる
 try:
     while True:
         for duty in range(minduty,maxduty+step,step):
+            print(duty)
             wiringpi.pwmWrite(18, duty)
             countnum =  take_a_picture(picnum)    #保存する写真する名前の数字を新しくする
             picnum = picnum +1
@@ -128,7 +129,6 @@ try:
                     print('mail send!')
                     send_email_with_jpeg('kurosefujii@gmail.com', 'rakuten765@gmail.com', u'今日の名言', body, js)
             print("'duty")
-            print(duty)
             sleep(1)
 
 except KeyboardInterrupt:
