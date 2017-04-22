@@ -1,0 +1,27 @@
+  277  cd panorama-stitching/
+  278  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  279  python stitch.py --first fujii_images/test1.jpg --second fujii_images/test2.jpg
+  280  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  281  python stitch_left_right.py --first fujii_images/test1.jpg --second fujii_images/test2.jpg
+  282  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  283  python stitch_left_right.py --first fujii_images/test2.jpg --second fujii_images/test3.jpg
+  284  python stitch_left_right.py --first fujii_images/test2.jpg --second fujii_images/test3.jpg]
+  285  cd panorama-stitching/
+  286  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  287  python stitch_left_right.py --first fujii_images/test2.jpg --second fujii_images/test3.jpg
+  288  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  289  python stitch.py --first fujii_images/test1.jpg --second fujii_images/test2.jpg
+  290  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  291  python stitch.py --first fujii_images/test1.jpg --second fujii_images/test2.jpg
+  292  python stitch_left_right.py --first fujii_images/test1.jpg --second fujii_images/test2.jpg
+  293  python stitch.py --first fujii_images/test1.jpg --second fujii_images/test2.jpg
+  294  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  295  python stitch.py --first fujii_images/test3.jpg --second fujii_images/test2.jpg
+  296  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test3.jpg
+  297  python stitch.py --first fujii_images/test3.jpg --second fujii_images/test2.jpg
+  298  python stitch.py --first fujii_images/test1.jpg --second fujii_images/test2.jpg
+  299  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test1.jpg
+  300  python stitch.py --first fujii_images/test2.jpg --second fujii_images/test3.jpg
+  301  python stitch.py --first fujii_images/test1.jpg --second fujii_images/Result.jpg
+  302  python stitch.py --first fujii_images/Result.jpg --second fujii_images/test1.jpg
+  303  sudo python2 camera_servo.py
